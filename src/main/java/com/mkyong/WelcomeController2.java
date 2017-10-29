@@ -11,11 +11,12 @@ public class WelcomeController2 {
 
 	// inject via application.properties
 	@Value("${welcome.message:test}")
-	private String message = "Hello World";
+	private String message = "Hello World changed";
 
 	@RequestMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("message", this.message);
+	
 		return "welcome";
 	}
 
