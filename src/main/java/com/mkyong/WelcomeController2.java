@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController2 {
 
 	// inject via application.properties
-	@Value("${welcome.message:test}")
-	@RequestMapping("/")
-	private String message = "for jenkins build 1";
-	public String welcome(Map<String, Object> model) {
-		model.put("message", this.message);
+// 	@Value("${welcome.message:test}")
+// 	@RequestMapping("/")
+// 	private String message = "for jenkins build 1";
+// 	public String welcome(Map<String, Object> model) {
+// 		model.put("message", this.message);
 	
-		return "welcome";
-	}
+// 		return "welcome";
+// 	}
 
 }
